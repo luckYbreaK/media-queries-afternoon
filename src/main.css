@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto+Slab');
+
+.welcome_container {
+    background: grey;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-family: "Montserrat";
+}
+.nav_bar {
+    /* background: blue; */
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_container {
+    /* background: green; */
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.logo_container a {
+    color: #fec810;
+    font-family: "Kaushan Script";
+    font-size: 1.25rem;
+}
+.nav_items {
+    /* background: pink; */
+    height: 39px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    text-transform: uppercase;
+    /* display: none; */
+    margin-top: 15px;
+    
+    overflow:hidden;
+    transition: 1s;
+}
+.nav_items:hover {
+        height: 105px;
+}
+li {
+    background: #393534;
+}
+.nav_items a {
+    color: #e2e1e8;
+}
+a {
+    text-decoration: none;
+}
+
+.yellow_btn {
+    background: #fec810;
+    color: white;
+    font-size: .9em;
+    text-transform: uppercase;
+    height: 2.5rem;
+    width: 6rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.hamburger {
+    height: .5rem;
+    width: auto;
+}
+.welcome_text_container {
+    /* background: purple; */
+    height: calc(100% - 5rem);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+}
+.welcome_text1 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    font-family: "Roboto+Slab";
+}
+.welcome_text2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.welcome_btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background: #fec810;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+}
+.services_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services_title {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.services_list {
+    /* width: 33%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    
+    padding: 0 2rem;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+@media (min-width: 770px) {
+    .welcome_text_container {
+        padding: 2rem 4rem 0 4rem;
+    }
+    .welcome_text1 {
+        font-size: 40px;
+    }
+    .welcome_text2 {
+        font-size: 75px;
+    }
+}
+
+@media (min-width: 990px) {
+    .welcome_container {
+        height: 80vh;
+    }
+    .yellow_btn {
+        display: none;
+    }
+    .nav_items {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 45vw;
+        transition: 0s;
+    }
+    .nav_items:hover {
+        height: 39px;
+    }
+    .nav_bar {
+        height: 6rem;
+        display: flex;
+        align-items: center;
+    }
+    li {
+        background: none;
+    }
+    .logo_container {
+        width: 20vw;
+    }
+    .logo_container a {
+        font-size: 1.75rem;
+    }
+}
